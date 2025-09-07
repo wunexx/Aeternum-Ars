@@ -42,7 +42,7 @@ ExportedObj/
 # Unity3D generated files on crash reports
 sysinfo.txt
 
-# Unity build outputs (except docs/)
+# Unity build outputs (except docs/Build/)
 [Bb]uild/
 *.apk
 *.aab
@@ -69,3 +69,4 @@ sysinfo.txt
 !Project/Packages/
 !Project/ProjectSettings/
 !docs/
+!docs/Build/     # <-- keep Build folder inside docs
