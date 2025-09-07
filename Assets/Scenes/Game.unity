@@ -1539,7 +1539,7 @@ MonoBehaviour:
   roomSize: 25
   paintingsPerRoom: 8
   seed: 1337
-  viewDistance: 3
+  viewDistance: 1
   paintingUI: {fileID: 1367290354}
   playerTransform: {fileID: 851480757}
 --- !u!1 &1570453104
