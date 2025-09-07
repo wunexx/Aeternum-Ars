@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08b647e3b6718b44ac3167aa8eb5b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCamera
-  mouseSensitivity: 100
+  mouseSensitivity: 10
   playerBody: {fileID: 851480757}
   playerCamera: {fileID: 330585546}
 --- !u!82 &330585549
