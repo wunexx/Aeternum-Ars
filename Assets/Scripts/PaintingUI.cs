@@ -17,10 +17,6 @@ public class PaintingUI : MonoBehaviour
     Texture2D currentTexture;
 
     private InputSystem_Actions inputActions;
-
-    [DllImport("__Internal")]
-    private static extern void DownloadFile(byte[] array, int byteLength, string fileName);
-
     private void Awake()
     {
         inputActions = new InputSystem_Actions();
@@ -55,20 +51,5 @@ public class PaintingUI : MonoBehaviour
         playerMovement.SetCanMove(true);
         playerCamera.SetCanLook(true);
         playerInteraction.SetCanInteract(true);
-    }
-    public void DownloadPainting()
-    {
-#if UNITY_EDITOR
-        Debug.Log("Downloading is not supported in the editor.");
-        return;
-#endif
-        if (currentTexture == null)
-        {
-            Debug.LogError("No texture to download.");
-            return;
-        }
-
-        byte[] bytes = currentTexture.EncodeToPNG();
-        DownloadFile(bytes, bytes.Length, "painting.png");
     }
 }
